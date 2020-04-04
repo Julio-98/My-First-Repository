@@ -9,3 +9,7 @@
 #Right, let's go ahead!
 
 #Third change
+#I am trying to apply git reset head^ but it is not working
+#I Will try modificate again, e se another war to unstage some change
+
+#Fourth change
