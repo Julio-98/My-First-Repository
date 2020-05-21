@@ -5,7 +5,8 @@ description = "Just to test and study somethings"
 authors = ["Julio <ramosjulio771@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"         
+python = "^3.7"
+speechrecognition = "^3.6.3"
 
 [tool.poetry.dev-dependencies]
 
