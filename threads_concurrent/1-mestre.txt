@@ -1,3 +1,20 @@
-Futuramente pretendo criar dentro desta pasta um tutorial em português
 Baseado neste tutorial: https://www.youtube.com/watch?v=IEEhzQoKtQU&t=1656s
 
+Quando precisamo rodar funções longas, e demoradas, programar de forma síncrona
+pode tornar nosso código lento. Como alternativa para solucionar estre problema
+podemos utilizar "threding module". Trheads são como instruções que passamos para 
+o nosso computador.
+
+Contudo, criar threads e destruir threads também é um porcesso que toma tempo de 
+execução, e por isso nem sempre é vantajoso utilizar este método. Um bom indicador 
+para utilizar ou não o módulo threading é verificar se durante o processo em que nossa
+função está rodando, ela está realmente utilando o CPU. Para isso, é preciso compreender
+que existem dois tipos de tarefas no nosso computador: "CPU bound taks & I/O-bound tasks"
+Se a tarefa que a função estiver executando for do tipo "I/O bound tasks"
+então aplicamos o método de threads.
+
+Caso tenhámos 2 funções, o que faremos é passar uma delas para o CPU
+e assim que o CPU estiver livre (mesmo que a função ainda esteja sendo 
+executada pelo I/O bound tasks) nós passamos a segunda função para o CPU
+dessa forma assim que as funções estiverem prontas, o computador devolve
+a informação para o programa. Vejamos um exemplo:
