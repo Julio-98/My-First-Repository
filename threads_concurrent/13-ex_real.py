@@ -1,7 +1,4 @@
-#Este exemplo será dividido em duuas partes
-#Na primeira realizaremos o donwload das imagens abaixa
-#De forma síncrona, e na secunda, farei o mesmo aplicando o 
-#método concorrente
+#Tentaremos melhorar o tempo de execução do código no arquivo 12
 
 import requests
 import time
@@ -28,17 +25,19 @@ img_urls = [
 t1 = time.perf_counter()
 
 
-for img_url in img_urls:
+def download_image(img_url):
     img_bytes = requests.get(img_url).content
     img_name = img_url.split('/')[3]
     img_name = f'{img_name}.jpg'
     with open(img_name, 'wb') as img_file:
         img_file.write(img_bytes)
         print(f'{img_name} was downloaded...')
+
+
+with concurrent.futures.ThreadPoolExecutor() as executor:
+    executor.submit(download_image, img) for img in img_urls]
+
+
 t2 = time.perf_counter()
 
 print(f'Finished in {t2-t1} seconds')
-
-#rodando o código podemos ver quando tempo ele leva pra ser executado
-#Meu código levou pouco mais de 277segundos para ser executado
-#Próximo arquivo tentarei melhorar esse tempo
