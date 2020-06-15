@@ -1,0 +1,15 @@
+Baseado neste tutorial: https://www.youtube.com/watch?v=fKl2JW_qrso&t=322s
+
+No tutorial sobre threads module, onde rodamos as coisas forma síncrona
+e de forma concorrente, foi resaltado que as tarefas podem ser dividas entre
+"CPU Bound tasks" & "I/O Bound Tasks", e que ao aplicarmos threads em tarefas do 
+segundo tipo, ganharíamos tempo, pois o CPU estaria desocupado, e então utilizariamos
+ele para fazer outras coisas. Contudo, este módulo não resolve o problema da velocidade
+lentidão do código caso estejamos rodando uma função que exija muito do CPU, pois o CPU 
+não estaria disponível para realizar outras atividades enquanto a primeira função estivesse
+sendo executada. E buscando resolver esse problema chegamo ao módulo Multiprocessos.
+
+"Multiprocessing" irá dividir nosso trabalho em vários processos, e utilizar
+vários processadores disponíveis em nossa máquina para realizar esse trabalho ao mesmo tempo. 
+Assim, "Multiprocessing" pode ser aplicável também nos casos de threads que estudamos
+e depende somente do hardware (quantos processadores) da sua máquina
