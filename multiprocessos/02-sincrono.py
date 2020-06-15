@@ -17,7 +17,7 @@ any_foo()
 any_foo()
 fim = time.perf_counter()
 
-print('O tem de execução foi de', fim - inicio,'segundos')
+print('O tempo de execução foi de', fim - inicio,'segundos')
 
 #vejamos quanto tempo leva para a mesma função ser executada 
 #duas vezes quando utilizamos multiprocessing
