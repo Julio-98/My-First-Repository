@@ -32,3 +32,7 @@ fim = time.perf_counter()
 
 tempo = fim - inicio
 print('O tempo de execução foi: ', tempo, 'segundos')
+
+#Algo importante a ser ressaltado é que o tratamento de exceções 
+#Não é realizado durante a execução da função mais sim quando
+#Esse dado é recuperado. 
