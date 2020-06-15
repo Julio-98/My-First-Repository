@@ -35,9 +35,17 @@ def download_image(img_url):
 
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
-    executor.submit(download_image, img) for img in img_urls]
+    executor.map(download_image, img_urls)
 
 
 t2 = time.perf_counter()
 
 print(f'Finished in {t2-t1} seconds')
+
+#Pois bem, utilizando o método map levamos apenas 67segundos para
+#fazer o download das mesmas fotos. Apesar desse método nos devolver
+#Os retorno da função (que são as fotos) na ordem dos argumentos que
+#passamos para função (url das fotos), isso não significa que ele
+#esteja fazendo um download de cada vez. 
+#Esse método inicia todos os downloads, e nos devolve os retornos
+#de acordo com uma ordem pré-estabelecida (que é a ordem das url's)
