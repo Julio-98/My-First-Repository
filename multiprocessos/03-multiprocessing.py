@@ -21,6 +21,7 @@ inicio = time.perf_counter()
 p1 = multiprocessing.Process(target=any_foo)
 p2 = multiprocessing.Process(target=any_foo)
 
+#passando o processos para o computador
 p1.start()
 p2.start()
 
