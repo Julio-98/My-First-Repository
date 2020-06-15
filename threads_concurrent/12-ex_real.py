@@ -1,3 +1,8 @@
+#Este exemplo será dividido em duuas partes
+#Na primeira realizaremos o donwload das imagens abaixa
+#De forma síncrona, e na secunda, farei o mesmo aplicando o 
+#método concorrente
+
 import requests
 import time
 import concurrent.futures
@@ -39,3 +44,7 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 t2 = time.perf_counter()
 
 print(f'Finished in {t2-t1} seconds')
+
+#rodando o código podemos ver quando tempo ele leva pra ser executado
+#Meu código levou pouco mais de 1min para ser executado
+#Próximo arquivo tentarei melhorar esse tempo
