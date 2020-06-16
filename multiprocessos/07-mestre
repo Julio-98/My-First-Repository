@@ -1,0 +1,16 @@
+
+Muito bem, até aqui estávamos interessado em ver o mecanismo do 
+sistemas de mutiplos processos. É interessante compreender isso para termos
+ideia do que estamos fazendo, e em versões anteriores ao python3.2
+era realmente assim que as coisas funcionavam, o que da razão ao que
+fizemos até agora. Contudo, adiante, iremos utilizar uma ferramenta 
+incluídas em versões apartir do python3.2 incluindo a 3.2, chamada
+"process pool executor".
+
+Na maioria das vezes process pool executor é mais eficiente e mais fácil 
+pois precisamos de um menor número de linhas para atingir o mesmo objetivo
+Além disso "process pool executor" nos permite fácilmente mudarmos nosso programa
+para "multple threads" mas não se preocupe com isso agora
+
+process pool executor não está na  biblioteca "multiprocessing",
+mas sim na biblioteca "concurrent futures module"
