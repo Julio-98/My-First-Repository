@@ -34,3 +34,11 @@ for processo in processo_list:
 fim = time.perf_counter()
 
 print('O tempo de execução foi de', fim - inicio,'segundos')
+
+#Veja que o tempo de execução deste código pode variar de máquina para
+#máquina, pois ele depende o Hardware de cda uma. Isso significa que
+#idealmente, se eu tenho 10 processadores, ese código levaria aproximadamente
+#1 segundo para se executado. Felizmente o contrário não é verdade. Se tenho 
+#dois processadores, não significa que a execução do programa levará 5 segundos
+#para ser executado, isso graças a um mecanismo de chaveamento dos processadores
+#que torna este sistema mais eficiente.
