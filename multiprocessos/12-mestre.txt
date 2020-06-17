@@ -1,0 +1,9 @@
+Até o momento, os arquivos criados neste tutorial muito se assemelham
+aos criados no tutorial sobre Threading Module, e dependendo do seu Hardware
+utilizar o método de threads pode ser até mais vantajoso. Isso ocorre
+porque as tarefas que realizamos são do tipo "I/O bound tasks", então não
+precisariamos utilizar dois CPUS. 
+
+Agora, para vermos uma aplicação onde só podemos utilizar multiprocessos
+nós manipular algumas imagens (CPU bound tasks), baixadas utilizando
+Threading Module (I/O bound tasks).
