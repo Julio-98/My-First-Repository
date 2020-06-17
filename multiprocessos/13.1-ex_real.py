@@ -39,6 +39,6 @@ for img_name in img_names:
 t2 = time.perf_counter()
 
 print(f'Finished in {t2-t1} seconds')
-#podemos ver que o tempo de execução, do nosso programa, e o que
+#podemos ver que o tempo de execução do nosso programa(93s), e o que
 #tentaremos fazer é melhorá-lo rodando o cógido em paralelo, isto é
 #utilizand multiplos processos
