@@ -5,7 +5,6 @@
 #ser executado
 
 import time
-import concurrent.futures
 from PIL import Image, ImageFilter
 
 img_names = [
