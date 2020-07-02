@@ -6,7 +6,7 @@
 <h2 id="sif">SIF</h2>
 <p><strong>ABOUT SIF</strong></p>
 <blockquote>
-<p>SIF is the abbbreviation for <strong>Simple Followed Image</strong>, the name of a robot, which, as suggested, is capable of following a certain image with a few variation of collors, that can be chosen by a voice command.</p>
+<p>SIF is the abbbreviation for <strong>Simple Followed Image</strong>, the name of a robot, which, as suggested, is capable of following a certain image with a few variation of collors, that can be chosen by a voice command. <img src="https://photos.google.com/photo/AF1QipMgFYub9hHwAYoVaHn9aUGJAxe633zAB7TFD7DC" alt="SIF's picture"></p>
 </blockquote>
 <p><strong>THE SOFTWARE</strong></p>
 <blockquote>
